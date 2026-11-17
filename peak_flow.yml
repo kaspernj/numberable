@@ -1,4 +1,9 @@
-before_script:
-  - npm install
-script:
-  - npm test
+dependency_roots:
+  - path: .
+builds:
+  numberable:
+    paths:
+      - "*"
+      - "**/*"
+    script:
+      - npm test
